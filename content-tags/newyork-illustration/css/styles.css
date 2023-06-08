@@ -10,4 +10,33 @@ a {
 figure {
   width: 220px;
   text-align: center;
+  padding: 18px;
+  /* border-width: 2px;
+  border-color: #e0e4e8;
+  border-style: solid; */
+  border: #e0e4e8 solid 2px;
+  margin: 20px 0;
+}
+
+.figure-cathedral {
+  float: right;
+  margin: 0 0 0 40px;
+}
+
+.figure-nasdaq {
+  float: left;
+  margin: 0 40px 0 0;
+}
+
+figcaption {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+p {
+ line-height: 26px;
+}
+
+ul {
+  line-height: 22px;
 }
