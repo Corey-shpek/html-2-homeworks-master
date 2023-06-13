@@ -8,6 +8,15 @@ body {
 	margin-top: 100px;
 	display: flex;
 	flex-wrap: wrap;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.card {
+	padding: 50px 40px;
+	width: 320px;
+	box-sizing: border-box;
 }
 
 .card:nth-child(odd) {
@@ -20,6 +29,8 @@ body {
 
 .card-date {
 	font-size: 13px;
+	display: block;
+	margin-bottom: 20px;
 }
 
 .card-name {
