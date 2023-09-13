@@ -3,18 +3,24 @@
   box-sizing: border-box;
   width: 100%;
   height: 38px;
-  
+
   padding-left: 10px;
   padding-right: 25px;
-  
+
   margin: 0;
-  
+
   border: 1px solid #cbd1d4;
   background-color: #f9f9f9;
-  
+
   font-size: 14px;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   color: #333333;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../img/select-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
 }
 
 .select:focus {
@@ -22,12 +28,32 @@
   outline-offset: 4px;
 }
 
-.checkbox-text {
+.checkbox-text::before {
+  content: "";
+  margin-right: 8px;
   display: inline-block;
+  position: top;
+  height: 20px;
+  width: 20px;
+  background-image: url(../img/checkbox-unchecked.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
 }
 
-.checkbox-text::before {
-  margin-right: 8px;
+.checkbox:checked ~ .checkbox-text::before {
+  background-image: url(../img/checkbox-checked.svg);
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.checkbox-text {
+  display: inline-block;
 }
 
 .checkbox:focus ~ .checkbox-text::before {
