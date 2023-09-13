@@ -4,9 +4,9 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  
+  margin-left: 210px;
+  margin-right: 210px;
+  width: 1175px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18,13 +18,30 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  
+
   display: flex;
   flex-wrap: wrap;
 }
 
+.menu-list-item:nth-child(n + 2) {
+  margin-left: 50px;
+}
+
+.header {
+  padding: 40px 0;
+}
+
+.header-logo {
+  width: 245px;
+}
+
 .header-logo-symbol {
   color: #fd5433;
+}
+
+.menu {
+  margin-top: 15px;
+  width: 700px;
 }
 
 .menu-link {
