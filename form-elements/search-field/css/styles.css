@@ -4,14 +4,18 @@
   border: 2px solid #dadada;
   padding: 10px 25px 10px 65px;
   margin: 0;
-  
+
   display: inline-block;
   vertical-align: middle;
-  
+
   font-size: 14px;
   height: 55px;
   border-radius: 25px;
   background-color: #ffffff;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 25px center;
 }
 
 .field:focus {
